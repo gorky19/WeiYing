@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_colorful"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/toolbar_zt"
+        android:background="@color/reds"
+        >
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:id="@+id/shou_back_icon"
+            android:src="@drawable/back"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_text"
+            android:text="收藏"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_All"
+            android:text="清除"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shou_recy"
+        android:layout_below="@+id/toolbar_zt"
+        ></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

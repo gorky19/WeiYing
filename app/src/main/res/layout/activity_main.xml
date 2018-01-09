@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zhangtao.bwie.com.demo.SlidingMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    >
+    <!--zt:rightPadding="100dp"-->
+    <!--xmlns:zt="http://schemas.android.com/apk/res/zhangtao.bwie.com.demo"-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/id_menu"
+        android:orientation="horizontal"
+        android:background="#800303"
+        >
+        <include layout="@layout/menu"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contexts"
+        >
+    <zhangtao.bwie.com.demo.NoScrollViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        >
+    </zhangtao.bwie.com.demo.NoScrollViewPager>
+        <com.jpeng.jptabbar.JPTabBar
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:id="@+id/jpbar"
+            app:TabAnimate="Rotate"
+            app:TabHeight="55dp"
+            app:TabSelectColor="#f00"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bottom_bg"
+            ></com.jpeng.jptabbar.JPTabBar>
+    </RelativeLayout>
+    </LinearLayout>
+</zhangtao.bwie.com.demo.SlidingMenu>

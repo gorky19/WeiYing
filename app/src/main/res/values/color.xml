@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="touming">#00000000</color>
+    <color name="reds">#f00</color>
+    <color name="whrit">#fff</color>
+    //themes
+    <color name="blue_img">#2196F3</color>
+    <color name="red_img">#F44336</color>
+    <color name="yellow_img">#CDDC39</color>
+    <color name="green_img">#4CAF50</color>
+    <color name="black_img">#000000</color>
+    <color name="zise_img">#9C27B0</color>
+    <color name="orage_img">#FF9800</color>
+    <color name="arg_img">#795548</color>
+    <color name="pink_img">#E91E63</color>
+</resources>

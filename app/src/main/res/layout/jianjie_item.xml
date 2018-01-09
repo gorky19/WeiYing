@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="144dp"
+        android:layout_height="208dp"
+        android:background="#80FFFFFF"
+        android:id="@+id/head_jianjie"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:id="@+id/sim_icons"
+        fresco:placeholderImage="@drawable/default_200"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="我的电脑"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:id="@+id/movic_name"
+        android:layout_below="@+id/head_jianjie"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/toolbar"
+        android:background="#000"
+        >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:id="@+id/back_icons"
+            android:background="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="35dp"
+            />
+    </RelativeLayout>
+    <zhangtao.bwie.com.demo.HackViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/photo2_vps"
+        android:layout_below="@id/toolbar"
+        ></zhangtao.bwie.com.demo.HackViewPager>
+</RelativeLayout>

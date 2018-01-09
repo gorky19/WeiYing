@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_colorful"
+    >
+
+    <include layout="@layout/meile_act"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/toolbar_zt"
+        android:background="@color/reds"
+        >
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_text"
+            android:text="发现"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/see_recy"
+        android:layout_below="@+id/toolbar_zt"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="none"
+        ></android.support.v7.widget.RecyclerView>
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:id="@+id/huan"
+        android:text="换一批"
+        android:background="@drawable/btn_huan"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        />
+</RelativeLayout>

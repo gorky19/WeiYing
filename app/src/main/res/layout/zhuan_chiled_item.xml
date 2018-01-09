@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="123dp"
+        android:layout_height="163dp"
+        android:id="@+id/chiled_zhuan_lay"
+        android:background="#59FFFFFF"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="115dp"
+            android:layout_height="155dp"
+            android:id="@+id/chiled_zhuan_img"
+            android:layout_centerInParent="true"
+            fresco:placeholderImage="@drawable/default_200"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:text="标题"
+        android:id="@+id/chiled_zhuan_text"
+        android:textColor="#fff"
+        android:layout_below="@+id/chiled_zhuan_lay"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        />
+</RelativeLayout>
